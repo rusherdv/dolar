@@ -4,7 +4,9 @@ Coded on Javascript with Fetch API
 
 A website to see the dolar price on ARS
 
-Deploy: <a href="" target="_blank">Click</a>
+Fetch webpage: [DolarAPI](https://dolarapi.com/docs)
+
+Deploy: <a href="https://fastidious-fudge-b18244.netlify.app/" target="_blank">Click</a>
 
 Image:
 
