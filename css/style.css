@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+:root {
+    --color-blanco: white;
+    --color-negro: black;
+    --color-verde: rgb(0, 192, 0);
+    --color-verdeoscuro: rgb(83, 138, 0);
+    --bg-color: white;
+}
+
+*{
+    transition: all .2s ease;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+td{
+    color: red;
+}
+
+.text{
+    color: var(--color-negro);
+}
+
+.dolar{
+    margin: auto;
+    width: 100%;
+    max-height: 500px;
+    position: relative;
+    display: flex;
+}
+
+.fluid-container{
+    background-color: var(--bg-color);
+    position: relative;
+    display: flex;
+}
+
+h1{
+    border-top: 1px solid rgb(136, 136, 136);
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.grafico{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgb(202, 202, 202);
+    width: 60%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    border-radius: 5px;
+}
+
+.reds{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    font-size: 30px;
+}
+
+#github{
+    padding-right: 10px;
+    color: black;
+}
+
+#github:hover{
+    padding-right: 10px;   
+    text-shadow: none;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: rgb(173, 173, 173);
+}
+
+a{
+    transition: text-shadow .2s ease-in-out, -webkit-text-stroke .2s ease-in-out;
+    -webkit-text-stroke: 1px white;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+a:hover{
+    -webkit-text-stroke: 1px rgb(255, 0, 0);
+    transform: scale(1.1);
+    cursor: pointer;
+    border-radius: 15px;
+    text-shadow:
+    0 0 1px rgb(255, 0, 0),
+    0 0 10px rgb(255, 0, 0),
+    0 0 15px rgb(255, 0, 0),
+    0 0 25px rgb(255, 0, 0),
+    0 0 50px rgb(255, 0, 0);
+}
+
+.actualizar{
+    border-radius: 0px;
+    background-color: var(--color-verde);
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.actualizar:hover{
+    background-color: var(--color-verdeoscuro);
+}
+
+.switch {
+  position: fixed;
+  display: inline-block;
+  bottom: 10px;
+  left: 10px;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
