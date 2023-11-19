@@ -187,3 +187,18 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media (max-width: 640px) {
+
+  h3{
+    display: none;
+  }
+
+  .grafico{
+    display: none;
+  }
+
+  .actualizar{
+    width: 95%;
+  }
+}
